@@ -22,9 +22,13 @@ android {
         }
     }
 
-    // pas obligatoire, mais utile si on active plus tard
     buildFeatures {
         viewBinding true
+        dataBinding false      // <- on désactive explicitement
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
     }
 }
 
